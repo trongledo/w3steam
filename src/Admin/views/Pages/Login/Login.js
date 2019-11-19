@@ -48,6 +48,7 @@ class Login extends Component {
       .catch(err => {
         console.log(err);
         document.getElementById('alert').hidden = false;
+        this.setState({ loading: false });
       });
 
     if (response) {
