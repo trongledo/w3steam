@@ -1,0 +1,16 @@
+.page-footer{
+    background: #2d2e2f;
+    height: 50px;
+    /* width: 100vw; */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: none;
+    
+}
+
+@media only screen and (max-width: 1224px){
+    .page-footer {
+        display: inherit;
+    }
+}

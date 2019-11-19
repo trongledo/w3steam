@@ -1,0 +1,111 @@
+
+.overlay-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffffb5;
+    z-index: 100;
+}
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+
+#loader .lading {
+    /*background-image: url("../images/loading.gif");*/
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+
+.load-icon {
+	width: 100px;
+	height: 20px;
+}
+.load-icon span {
+	position: absolute;
+	display: inline-block;
+	background: #a6c9e6;
+	width: 20%;
+	height: 100%;
+	border-radius: 100px;
+}
+.load-icon span:nth-of-type(1) {
+	left: 0;
+}
+.load-icon span:nth-of-type(2) {
+	left: 40%;
+}
+.load-icon span:nth-of-type(3) {
+	right: 0;
+}
+
+/* Animation */
+.load-icon span {
+	animation-name: loading;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+.load-icon span:nth-of-type(2) {
+	animation-delay: .2s;
+}
+.load-icon span:nth-of-type(3) {
+	animation-delay: .4s;
+}
+
+/* Keyframes */
+@keyframes loading {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* This isn't needed, just styling pen. */
+body {
+  
+  background: #ddd;
+}
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

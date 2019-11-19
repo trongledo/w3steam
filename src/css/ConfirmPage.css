@@ -1,0 +1,118 @@
+  
+  * {
+		box-sizing: border-box;
+	}
+
+	.confirm-page {
+		background: #3a7bd5;
+		background-image: -webkit-radial-gradient(top, circle cover, #01242b 0%, #171a1f 80%);
+	}
+
+	.window {
+		opacity: 0;
+		animation: bounceIn 0.5s ease-in-out;
+		animation-delay: 0.5s;
+		animation-fill-mode: forwards;
+		display: block;
+		margin: auto;
+		min-width: 250px;
+		max-width: 640px;
+		width: 70%;
+		height: 300px;
+	}
+  
+	
+  textarea, input, button {
+	outline: none;
+  }
+  
+  .window-button, .window .buttons .close-btn, .window .buttons .minimize, .window .buttons .maximize {
+	padding: 0;
+	margin: 0;
+	margin-right: 4px;
+	width: 12px;
+	height: 12px;
+	background-color: gainsboro;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .window .handle {
+	height: 22px;
+	background: linear-gradient(0deg, #e5fffe, #f1f1f1);
+	border-top: 1px solid white;
+	border-bottom: 1px solid #b3b3b3;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: rgba(0, 0, 0, 0.7);
+	font-family: 'Courier New';
+	font-size: 13px;
+	line-height: 22px;
+	text-align: center;
+  }
+  .window .buttons {
+	position: absolute;
+	float: left;
+	margin: 0 8px;
+  }
+  .window .buttons .close-btn {
+	background-color: #ff6159;
+  }
+  .window .buttons .minimize {
+	background-color: #ffbf2f;
+  }
+  .window .buttons .maximize {
+	background-color: #25cc3e;
+  }
+  .window .terminal {
+	padding: 4px;
+	background-color: black;
+	opacity: 0.7;
+	min-height: 300px;
+	height: 60%;
+	color: white;
+	font-family: 'Courier New', monospace;
+	font-weight: 200;
+	font-size: 14px;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow-y: auto;
+  }
+  .window .terminal::after {
+	content: "|";
+	animation: blink 2s steps(1) infinite;
+  }
+  
+  .prompt {
+	color: #bde371;
+  }
+  
+  .path {
+	color: #5ed7ff;
+  }
+  
+  @keyframes blink {
+	50% {
+	  color: transparent;
+	}
+  }
+  @keyframes bounceIn {
+	0% {
+		transform: translateY(-200px);
+		opacity: 1;
+	}
+	60% {
+		transform: translateY(20px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+  } 

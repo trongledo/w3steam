@@ -1,0 +1,225 @@
+.item-project{
+
+}
+
+.item-project.dark-theme {
+    color: white;
+}
+
+.item-project.light-theme {
+    color: #333;
+}
+
+.item-project  .item-content .project-icon i {
+    opacity: 0;
+    color: black;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.item-project:hover  .item-content  .project-icon  .icon-detail  i{
+    opacity: 1;
+    animation: showup;
+    animation-duration: 2s;
+    animation-delay: 0.05s;
+    animation-fill-mode: forwards;
+}
+
+.item-project:hover  .item-content  .project-icon  .icon-view  i {
+    opacity: 1;
+    animation: showup;
+    animation-duration: 2s;
+    animation-delay: 0.08s;
+    animation-fill-mode: forwards;
+}
+
+
+.item-project {
+    /* padding: 30px; */
+    position: relative;
+    padding: 7px;
+    cursor: pointer;
+    
+}
+
+.item-project > .item-project-inner {
+    opacity: 0;
+    position: relative;
+}
+
+
+@keyframes showup1 {
+    from{opacity: 0; transform: translateY(50%);}
+    to  { opacity: 1;transform: translateY(0%);}
+}
+
+.load-project-animation {
+    animation: showup1;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.grid-sizer + div > .load-project-animation{
+    animation-delay: 0.5s;
+}
+
+.grid-sizer + div + div > .load-project-animation {
+    animation-delay: 0.7s;
+}
+
+.grid-sizer + div + div + div > .load-project-animation{
+    animation-delay: 1.1s;
+}
+
+.grid-sizer + div + div + div + div > .load-project-animation{
+    animation-delay: 0.7s;
+}
+
+.grid-sizer + div + div + div + div + div > .load-project-animation{
+    animation-delay: 1.1s;
+}
+
+.grid-sizer + div + div + div + div + div + div > .load-project-animation{
+    animation-delay: 0.6;
+}
+
+.grid-sizer + div + div + div + div + div + div + div > .load-project-animation{
+    animation-delay: 1s;
+}
+
+@keyframes fadeOutCenter {
+    from{}
+    to  {transform: scale(0);opacity: 0;}
+}
+
+@keyframes fadeInCenter {
+    from{transform: scale(0);opacity: 0;}
+    to  {transform: scale(100%);opacity: 1;}
+}
+
+.item-fade-out-center{
+    animation: fadeOutCenter;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.item-fade-in-center{
+    animation: fadeInCenter;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+.item-project .bgd-img {
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    transition: all 0.3;
+
+}
+
+.item-content {
+    position: absolute;
+    top: 36px;
+    bottom: 36px;
+    left: 36px;
+    right: 36px;
+    
+}
+
+@keyframes showup {
+    from{transform: translateY(50%);}
+    to  {transform: translateY(0%);}
+}
+
+
+.item-project  .item-content .project-name {
+    font-size: 18pt;
+    opacity: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.item-project  .item-content .project-type {
+    cursor: pointer;
+    opacity: 0;
+    margin: 0;
+ }
+ .item-project  .item-content .project-icon  .icon-detail  img {
+    opacity: 0;
+}
+
+.item-project  .item-content .project-icon  .icon-view  img  {
+    opacity: 0;
+}
+
+.item-project:hover  .item-content .project-type, 
+.item-project:hover  .item-content .project-name{
+    opacity: 1;
+    animation: showup;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1;
+} 
+
+
+.item-project:hover  .item-content  .project-icon  .icon-detail  img{
+    opacity: 1;
+    animation: showup;
+    animation-duration: 2s;
+    animation-delay: 0.08s;
+    animation-fill-mode: forwards;
+}
+
+.item-project:hover  .item-content  .project-icon  .icon-view  img {
+    opacity: 1;
+    animation: showup;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.item-project:hover  .item-content  .bgd-img {
+    opacity: 0.6;
+}
+
+.project-icon {
+    position: absolute;
+    bottom: 36px;
+}
+
+.project-icon  a  img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid{
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.grid-item {
+  float: left;
+
+}
+
+.grid-sizer{ 
+    width: 25%;
+}

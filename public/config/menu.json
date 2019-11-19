@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "text": "Home",
+    "link": "/",
+    "isPrivate": false
+  },
+  {
+    "id": "2",
+    "text": "404",
+    "link": "/pages/404.md",
+    "isPrivate": false
+  },
+  {
+    "id": "2",
+    "text": "about",
+    "link": "/pages/about.md",
+    "isPrivate": false
+  },
+  {
+    "id": "3",
+    "text": "Works & Our Project",
+    "link": "/works",
+    "isPrivate": false
+  },
+  {
+    "id": "4",
+    "text": "New & Exiting Trends",
+    "link": "http://demo.agnidesigns.com/fortune/demo3/portfolio/pop/",
+    "isPrivate": true
+  },
+  {
+    "id": "5",
+    "text": "Demo",
+    "link": "http://demo.agnidesigns.com/fortune/demo3/portfolio/comma-logo-marks/",
+    "isPrivate": false
+  },
+  {
+    "id": "6",
+    "text": "Home",
+    "link": "http://demo.agnidesigns.com/fortune/demo3/portfolio/pop/",
+    "isPrivate": false
+  },
+  {
+    "id": "7",
+    "text": "About Us",
+    "link": "/pages/w3team-rule.md",
+    "isPrivate": true
+  }
+]
